@@ -7,6 +7,7 @@ character, location and the "episode/s" where is present
 import requests
 from pprint import pprint
 
+
 def character_info_extractor(character_name):
     sut_url = "https://rickandmortyapi.com/api"  # base url
 
@@ -42,6 +43,7 @@ def character_info_extractor(character_name):
             "status": character_data["status"],
             "species": character_data["species"],
             "gender": character_data["gender"],
+            "type": character_data["type"],
         },
         "Location info": {
             "name": location_data["name"],
@@ -56,5 +58,5 @@ def character_info_extractor(character_name):
 
 
 # print the response function in order to see results in screen
-result = character_info_extractor("Jerry Smith")
+result = character_info_extractor("Abradolf Lincler")
 pprint(result)
