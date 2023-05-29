@@ -1,0 +1,1 @@
+# fer-qaiotdb-challenge2022
